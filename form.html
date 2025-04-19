@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Form</title>
+        <link
+            rel="stylesheet"
+            href="./css/reset.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./css/style.css"
+        />
+    </head>
+    <body class="form-body">
+        <div class="form-container">
+            <div class="form-content">
+                <div class="form-heading">
+                    <h1 class="form-title">REGISTER</h1>
+                    <p class="form-text">IT'S COMPLETELY FREE</p>
+                </div>
+
+                <!-- Form -->
+                <form
+                    class="form"
+                    autocomplete="off"
+                >
+                    <!-- Profile Picture (Avatar) -->
+                    <div class="form-group avatar-form">
+                        <label
+                            for="avatar"
+                            class="form-label avatar-label"
+                        >
+                            <img
+                                src="./img/img-avatar-placeholder.png"
+                                alt="avatar"
+                                class="avatar-img"
+                            />
+                        </label>
+                        <input
+                            type="file"
+                            accept="image/*"
+                            id="avatar"
+                            class="text-input avatar-input"
+                            hidden
+                        />
+                    </div>
+
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label
+                            for="name"
+                            class="form-label"
+                            >Display Name</label
+                        >
+                        <input
+                            type="text"
+                            id="name"
+                            class="text-input"
+                            autocomplete="off"
+                            spellcheck="false"
+                            placeholder="Your full name"
+                        />
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label
+                            for="email"
+                            class="form-label"
+                        >
+                            Email
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            class="text-input"
+                            autocomplete="off"
+                            spellcheck="false"
+                            placeholder="Your email address"
+                        />
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label
+                            for="phone"
+                            class="form-label"
+                            >Phone Number</label
+                        >
+                        <input
+                            type="tel"
+                            id="phone"
+                            class="text-input"
+                            autocomplete="off"
+                            spellcheck="false"
+                            placeholder="Your phone number"
+                        />
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label
+                            for="password"
+                            class="form-label"
+                            >Password</label
+                        >
+                        <input
+                            type="password"
+                            id="password"
+                            class="text-input"
+                            autocomplete="off"
+                            spellcheck="false"
+                            placeholder="Enter your password"
+                        />
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+                        <label
+                            for="confirm-password"
+                            class="form-label"
+                            >Confirm Password</label
+                        >
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            class="text-input"
+                            autocomplete="off"
+                            spellcheck="false"
+                            placeholder="Re-enter your password"
+                        />
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="form-group radio-group">
+                        <label class="radio-text">Gender:</label>
+                        <input
+                            type="radio"
+                            id="male"
+                            name="gender"
+                            class="text-input radio-input"
+                        />
+                        <label
+                            for="male"
+                            class="radio-label"
+                            >Male</label
+                        >
+                        <input
+                            type="radio"
+                            id="female"
+                            name="gender"
+                            class="text-input radio-input"
+                        />
+                        <label
+                            for="female"
+                            class="radio-label"
+                            >Female</label
+                        >
+                        <input
+                            type="radio"
+                            name="gender"
+                            id="others"
+                            class="text-input radio-input"
+                        />
+                        <label
+                            for="others"
+                            class="radio-label"
+                            >Others</label
+                        >
+                    </div>
+
+                    <!-- Date of Birth -->
+                    <div class="form-group">
+                        <label
+                            for="dob"
+                            class="form-label"
+                            >Date of Birth</label
+                        >
+                        <input
+                            type="date"
+                            id="dob"
+                            class="text-input"
+                        />
+                    </div>
+
+                    <!-- Address -->
+                    <div class="form-group">
+                        <label
+                            for="address"
+                            class="form-label"
+                            >Address</label
+                        >
+                        <input
+                            type="text"
+                            id="address"
+                            class="text-input"
+                            autocomplete="off"
+                            spellcheck="false"
+                            placeholder="Street address, city, postcode"
+                        />
+                    </div>
+
+                    <!-- Communication Preferences -->
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-text"
+                            >Communication Preferences:</label
+                        >
+                        <div class="checkbox-item">
+                            <input
+                                type="checkbox"
+                                id="newsletter"
+                                class="text-input checkbox-input"
+                            />
+                            <label
+                                for="newsletter"
+                                class="form-label checkbox-label"
+                                >Subscribe to Newsletter
+                            </label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input
+                                type="checkbox"
+                                id="emails"
+                                class="text-input checkbox-input"
+                            />
+                            <label
+                                for="emails"
+                                class="form-label checkbox-label"
+                                >Receive Promotional Emails</label
+                            >
+                        </div>
+                        <div class="checkbox-item">
+                            <input
+                                type="checkbox"
+                                id="product-update"
+                                class="text-input checkbox-input"
+                            />
+                            <label
+                                for="product-update"
+                                class="form-label checkbox-label"
+                                >Get Product Updates
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <button
+                        class="btn"
+                        type="submit"
+                    >
+                        CREATE ACCOUNT
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
