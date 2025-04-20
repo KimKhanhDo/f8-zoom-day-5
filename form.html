@@ -54,7 +54,7 @@
                     <div class="form-group">
                         <label
                             for="name"
-                            class="form-label"
+                            class="form-label required"
                             >Display Name</label
                         >
                         <input
@@ -64,6 +64,8 @@
                             autocomplete="off"
                             spellcheck="false"
                             placeholder="Your full name"
+                            minlength="3"
+                            required
                         />
                     </div>
 
@@ -71,10 +73,9 @@
                     <div class="form-group">
                         <label
                             for="email"
-                            class="form-label"
+                            class="form-label required"
+                            >Email</label
                         >
-                            Email
-                        </label>
                         <input
                             type="email"
                             id="email"
@@ -82,6 +83,8 @@
                             autocomplete="off"
                             spellcheck="false"
                             placeholder="Your email address"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                            required
                         />
                     </div>
 
@@ -89,7 +92,7 @@
                     <div class="form-group">
                         <label
                             for="phone"
-                            class="form-label"
+                            class="form-label required"
                             >Phone Number</label
                         >
                         <input
@@ -99,6 +102,8 @@
                             autocomplete="off"
                             spellcheck="false"
                             placeholder="Your phone number"
+                            pattern="\d{10}"
+                            required
                         />
                     </div>
 
@@ -106,7 +111,7 @@
                     <div class="form-group">
                         <label
                             for="password"
-                            class="form-label"
+                            class="form-label required"
                             >Password</label
                         >
                         <input
@@ -116,6 +121,8 @@
                             autocomplete="off"
                             spellcheck="false"
                             placeholder="Enter your password"
+                            minlength="6"
+                            required
                         />
                     </div>
 
@@ -123,7 +130,7 @@
                     <div class="form-group">
                         <label
                             for="confirm-password"
-                            class="form-label"
+                            class="form-label required"
                             >Confirm Password</label
                         >
                         <input
@@ -133,17 +140,21 @@
                             autocomplete="off"
                             spellcheck="false"
                             placeholder="Re-enter your password"
+                            minlength="6"
+                            required
                         />
                     </div>
 
                     <!-- Gender -->
                     <div class="form-group radio-group">
-                        <label class="radio-text">Gender:</label>
+                        <label class="radio-text">Gender</label>
                         <input
                             type="radio"
                             id="male"
                             name="gender"
                             class="text-input radio-input"
+                            minlength="6"
+                            required
                         />
                         <label
                             for="male"
@@ -208,7 +219,7 @@
                     <!-- Communication Preferences -->
                     <div class="form-group checkbox-group">
                         <label class="checkbox-text"
-                            >Communication Preferences:</label
+                            >Communication Preferences</label
                         >
                         <div class="checkbox-item">
                             <input
